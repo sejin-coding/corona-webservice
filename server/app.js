@@ -19,8 +19,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-var cors = require('cors')
-app.use(cors());
+// var cors = require('cors')
+// app.use(cors());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
